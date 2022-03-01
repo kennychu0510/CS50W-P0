@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    .grey-google {
+        color: #b2b3b4;
+        display: flex;
+        position: absolute;
+        top: 0;
+        margin: 10px 20px 10px;
+    }
+
+    span {
+        font-size: 30px;
+    }
+
+    hr {
+        border: 0.3px solid #383b3e;
+    }
+
+    form {
+        display: inline;
+        color: #bdc1c6;
+    }
+
+    .header {
+        display: inline-block;
+        margin: 20px 50px 20px;
+        font-size: 20px;
+        color: #e9846e;
+
+    }
+
+    h3 {
+        margin-left: 50px;
+        margin-top: 50px;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+
+    }
+
+    input[type="submit"] {
+        background-color: #8ab4f8;
+        color: #202124;
+        font-weight: 700;
+        margin-left: 50px;
+        display: block;
+
+    }
+
+    .input-box {
+        border-radius: 0;
+        padding: 5px;
+
+    }
+
+    label {
+        display: inline-block;
+        width: 200px;
+    }
+
+    form>div {
+        display: block;
+        margin-left: 50px;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <a href="index.html">Google Search</a>
+        <a href="image.html">Image Search</a>
+    </div>
+
+    <span class="grey-google">
+        <span>G</span>
+        <span>o</span>
+        <span>o</span>
+        <span>g</span>
+        <span>l</span>
+        <span>e</span>
+    </span>
+
+    <span class="header">Advanced Search</span>
+    <hr>
+
+    <h3>Find pages with...</h3>
+    <div class="form">
+        <form action="https://google.com/search">
+            <div>
+                <label for="q">all these words:</label>
+                <input class="input-box" type="text" name="q">
+            </div>
+
+            <div>
+                <label for="as_epq">this exact word or phrase:</label>
+                <input class="input-box" type="text" name="as_epq">
+
+            </div>
+
+            <div>
+                <label for="as_oq">any of these words:</label>
+                <input class="input-box" type="text" name="as_oq">
+
+            </div>
+
+            <div>
+                <label for="as_eq">none of these words:</label>
+                <input class="input-box" type="text" name="as_eq">
+
+            </div>
+
+            <input type="submit" value="Advanced Search">
+        </form>
+    </div>
+
+</body>
+
+</html>
